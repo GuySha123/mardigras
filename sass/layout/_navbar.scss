@@ -1,0 +1,21 @@
+.navbar{
+    background-color: $yellowNav !important;
+    font-family: $font-family-nav;
+    font-size: 1.5rem;
+    color: black;
+}
+
+
+.navbar .collapse .navbar-nav .nav-item{
+
+    @include medium-device{
+        width: 16vw;
+    }
+}
+.navbar .collapse .navbar-nav .nav-item .active{
+    background-color: $yellowHighlight;
+}
+
+.navbar .collapse .navbar-nav .carousel-caption{
+    background-color: #777 !important;
+}

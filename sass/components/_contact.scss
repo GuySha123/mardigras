@@ -1,0 +1,92 @@
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-bottom: 60px;    
+}
+
+.contact .theForm{
+    background-color: $green;
+    box-shadow: 4px 4px 4px rgba(0,0,0,.5);
+    padding: 20px;
+
+    @include small-device{
+        border-radius: 0;
+        width: 350px;
+    }
+
+    @include medium-device{
+        border-radius: 15px;
+        width: 600px;
+    }
+
+}
+
+.contact .theForm h2{
+    text-align: center;
+    color: $purple;
+    margin-bottom: 20px;
+}
+
+.formControl{
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.formControl ::placeholder{
+    font-size: 1.1rem;
+    font-family: $font-family-text;
+}
+
+.formControl input{
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea {
+            width: 100%;
+            height: 200px;
+            resize: none;
+        }
+
+.formControl input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+:root{
+    --success: #2c7;
+    --error: #e43;
+}
+.formControl.success input{
+    border-color: var(--success);
+}
+.formControl.error input{
+    border-color: var(--error);
+}
+.formControl small{
+    color: var(--error);
+    visibility: hidden;
+}
+.formControl.error small{
+    visibility: visible;
+}
+
+input[type=submit]{
+    border: 2px solid $purple;
+    background-color: $purpleFoot;
+    border-radius: 4px;
+    color: $white;
+    display: block;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+}
+

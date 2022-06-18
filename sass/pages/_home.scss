@@ -1,0 +1,98 @@
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background-color: $yellow;
+}
+
+.gate {
+    background-image: url('/Photos/main.jpg');
+    height: 60vh;
+    width: 100vw;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.mardiLogo{
+    position: relative;
+    height: 100%;
+    @include small-device{
+        width: 100%;
+    }
+    @include medium-device{
+        width: 45%;
+        margin-left: 50%;
+    }
+    @include large-device{
+        width: 50%;
+    }
+    @include x-large-device{
+        width: 40%;
+        margin-left: 61%;
+    }
+    @include xx-large-device{
+        width: 30%;
+        margin-left: 64%;
+    }
+
+}
+
+.carousel{
+    @include small-device{
+        display: none;
+    }
+    @include medium-device{
+        display: block;
+    }
+}
+
+.mobilePhoto{
+    @include small-device{
+        display: block;
+    }
+    @include medium-device{
+        display: none;
+    }
+}
+
+
+
+.sponserTitle{
+    width: 100%;
+    background-color: $green;
+    justify-content: center;
+}
+
+
+.contant{
+    background-color: $green;
+    
+    @include small-device{
+        height: 50vh;
+    }
+    @include medium-device{
+        height: 40vh;
+    }
+}
+
+
+.info{
+    position: relative;
+
+    @include small-device{
+        top: 0;
+        font-size: 1rem;
+    }
+    @include medium-device{
+        top: 6vh;
+        font-size: 1.5rem;
+    }
+    @include large-device{
+        top: 8vh;
+        font-size: 1.5rem;
+    }
+
+}

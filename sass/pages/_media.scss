@@ -1,0 +1,44 @@
+.mediaTitle{
+    position: relative;
+    margin-top: 60px;
+    background-color: $greenTitle;
+    width: 100vw;
+}
+
+.ratio{
+    @include small-device{
+        width: 350px;
+        height: 250px;
+    }
+    @include medium-device{
+        width: 1000px;
+        height: 600px;
+    }
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.mediaSpace{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background-color: $green;
+}
+
+.mediaPics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 30px;
+    
+}
+.mediaPics img{
+    width: 100%;
+    height: 100%;
+}
+.mediaPics a{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
